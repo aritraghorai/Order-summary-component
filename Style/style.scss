@@ -84,6 +84,12 @@ body{
         text-decoration: underline;
         font-weight: 700;
        margin-right: -8%;
+       &:hover{
+           opacity: .5;
+           a{
+               text-decoration: none;
+           }
+       }
     }
     .plan,.price{
         margin-left: -4%;
@@ -99,6 +105,10 @@ body{
     background: $Bright_blue;
     padding: 3%;
     border-radius: 10px;
+    cursor: pointer;
+   &:hover {
+       opacity: .5;
+   }
 }
 .cancel{
     font-weight: bold;

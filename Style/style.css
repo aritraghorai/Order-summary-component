@@ -102,6 +102,14 @@ body {
   margin-right: -8%;
 }
 
+.subscription .change:hover {
+  opacity: .5;
+}
+
+.subscription .change:hover a {
+  text-decoration: none;
+}
+
 .subscription .plan, .subscription .price {
   margin-left: -4%;
 }
@@ -117,6 +125,11 @@ body {
   background: #3829e0;
   padding: 3%;
   border-radius: 10px;
+  cursor: pointer;
+}
+
+.payment:hover {
+  opacity: .5;
 }
 
 .cancel {
