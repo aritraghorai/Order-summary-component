@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@700&display=swap');
+
+$Pale_blue: hsl(225, 100%, 94%);
+$Bright_blue: hsl(245, 75%, 52%);
+
+
+$Very_pale_blue: hsl(225, 100%, 98%);
+$Desaturated_blue: hsl(224, 23%, 55%);
+$Dark_blue: hsl(223, 47%, 23%);
+*{
+    box-sizing: border-box;
+    font-family: 'Red Hat Display';
+}
+body{
+    background-image: url(/images/pattern-background-desktop.svg);
+    background-repeat:repeat-x;
+    background-color: hsl(225, 100%, 94%);
+}
+.container{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.order{
+    width: 27%;
+    border-radius: 15px;
+    overflow: hidden;
+    height: 77vh;
+    background-color: white;
+    text-align: center;
+    
+    .image img{
+        display: block;
+        width: 100%;
+
+    }
+    
+
+}
+.order-foater{
+    margin: -2px;
+}
+.order-summery{
+    padding: 15px;
+    font-weight: bolder;
+}
+.order-description{
+    display: inline-block;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-weight: 200;
+    padding-bottom: 20px;
+}
+.subscription{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: $Very_pale_blue;
+    margin: 9% 10% ;
+    padding: 5%;
+
+    border-radius: 10px;
+    .icon{
+        display: flex;
+        justify-self: flex-start;
+        align-self: flex-start;
+       margin-left: -7%;
+    }
+    .icon img{
+        display: inline;
+        margin-left: 0px;
+    }
+    .plan{
+        font-weight: bold;
+    }
+    .change{
+        display: inline-block;
+        text-decoration: underline;
+        font-weight: 700;
+       margin-right: -8%;
+    }
+    .plan,.price{
+        margin-left: -4%;
+    }
+}
+.payment a{
+       text-decoration: none;
+       color: white;
+       font-weight: bold;
+}
+.payment{
+    margin: 9% 10%;
+    background: $Bright_blue;
+    padding: 3%;
+    border-radius: 10px;
+}
+.cancel{
+    font-weight: bold;
+    margin-top: -4%;
+    color: rgb(100, 93, 93);
+}
+@media (max-width:1200px) {
+    .order{
+        width: 29%;
+    }
+
+}
+@media (max-width:1000px) {
+    .order{
+        width: 45%;
+    }
+}
+@media (max-width:800px) {
+    .order{
+        width: 50%;
+    }
+}
+@media (max-width:750px) {
+    .order{
+        width: 60%;
+    }
+}
+@media (max-width:600px) {
+    .order{
+        width: 80%;
+    }
+}
+@media (max-width:480px) {
+    .order{
+        width: 98%;
+    }
+    @media(max-height:620px) {
+        .order{
+            height: 95%;
+        }
+    }
+    @media(max-height:550px) {
+        .container{
+            overflow-x: scroll;
+        }
+        .order{
+            height: 100vh;
+        }
+    }
+
+}

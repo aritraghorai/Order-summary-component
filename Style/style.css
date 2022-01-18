@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Red Hat Display';
+}
+
+body {
+  background-image: url(/images/pattern-background-desktop.svg);
+  background-repeat: repeat-x;
+  background-color: #e0e8ff;
+}
+
+.container {
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.order {
+  width: 27%;
+  border-radius: 15px;
+  overflow: hidden;
+  height: 77vh;
+  background-color: white;
+  text-align: center;
+}
+
+.order .image img {
+  display: block;
+  width: 100%;
+}
+
+.order-foater {
+  margin: -2px;
+}
+
+.order-summery {
+  padding: 15px;
+  font-weight: bolder;
+}
+
+.order-description {
+  display: inline-block;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-weight: 200;
+  padding-bottom: 20px;
+}
+
+.subscription {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f5f7ff;
+  margin: 9% 10%;
+  padding: 5%;
+  border-radius: 10px;
+}
+
+.subscription .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-self: flex-start;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-left: -7%;
+}
+
+.subscription .icon img {
+  display: inline;
+  margin-left: 0px;
+}
+
+.subscription .plan {
+  font-weight: bold;
+}
+
+.subscription .change {
+  display: inline-block;
+  text-decoration: underline;
+  font-weight: 700;
+  margin-right: -8%;
+}
+
+.subscription .plan, .subscription .price {
+  margin-left: -4%;
+}
+
+.payment a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.payment {
+  margin: 9% 10%;
+  background: #3829e0;
+  padding: 3%;
+  border-radius: 10px;
+}
+
+.cancel {
+  font-weight: bold;
+  margin-top: -4%;
+  color: #645d5d;
+}
+
+@media (max-width: 1200px) {
+  .order {
+    width: 29%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .order {
+    width: 45%;
+  }
+}
+
+@media (max-width: 800px) {
+  .order {
+    width: 50%;
+  }
+}
+
+@media (max-width: 750px) {
+  .order {
+    width: 60%;
+  }
+}
+
+@media (max-width: 600px) {
+  .order {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .order {
+    width: 98%;
+  }
+}
+
+@media (max-width: 480px) and (max-height: 620px) {
+  .order {
+    height: 95%;
+  }
+}
+
+@media (max-width: 480px) and (max-height: 550px) {
+  .container {
+    overflow-x: scroll;
+  }
+  .order {
+    height: 100vh;
+  }
+}
+/*# sourceMappingURL=style.css.map */
